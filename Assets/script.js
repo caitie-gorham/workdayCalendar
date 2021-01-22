@@ -9,22 +9,20 @@ $(document).ready(function() {
     
     var hour = localTime.hour // create a variable that pulls the current hour using luxon
     
-    $(".textFill").each(function(){
-        var elementTime = parseInt($(this).attr("time-hour"))
+    $(".textFill").each(function(){ // function that runs for each time block text fill area
+        var elementTime = parseInt($(this).attr("time-hour")) // create a variable that is the number of the hour of the time block 
         if (hour === elementTime) { // if time block is present hour
             $(this).addClass("present"); // make textarea red (use .present css sytling)
-        } else if(hour > elementTime) {  
-            $(this).addClass("past");  
-        } else {  
-            $(this).addClass("future");
+        } else if(hour > elementTime) {  // if time block is greater than the current hour, meaning it is in the past
+            $(this).addClass("past");  // make textarea gray (use .past css sytling)
+        } else {  // if time block is not present or past 
+            $(this).addClass("future"); // make textarea green (use .future css sytling)
         }
     })
 
-    
-
-    // load any saved data from local storage to correct div
-    // on click listener for the save button 
-    // save values of text to local storage
-    // values will be from the textarea
+    $(".saveBtn").on("click", function(){ // create a click handler
+        var savedText = $(".textFill").val() // create a variable for the value within the textFill area
+        localStorage.setItem("server", savedText) // save that variable to local storage
+    })
 
 });
