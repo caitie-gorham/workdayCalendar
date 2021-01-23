@@ -9,6 +9,8 @@ $(document).ready(function() {
     
     var hour = localTime.hour // create a variable that pulls the current hour using luxon
 
+    
+
     $(".textFill").each(function(){ // function that runs for each time block text fill area
         var elementTime = parseInt($(this).attr("time-hour")) // create a variable that is the number of the hour of the time block 
         if (hour === elementTime) { // if time block is present hour
@@ -18,11 +20,15 @@ $(document).ready(function() {
         } else {  // if time block is not present or past 
             $(this).addClass("future"); // make textarea green (use .future css sytling)
         }
-        $(".saveBtn").on("click", function(){ // create a click handler
+        
+        $(this).val(localStorage.getItem($(this).parent().attr("id")))
+        
+        $(".saveBtn").on("click", function(){ 
             var text = $(this).siblings(".textFill").val()
             var savedText = $(this).parent().attr("id") 
             localStorage.setItem(savedText, text) 
         })
     })
+        
 
 });
