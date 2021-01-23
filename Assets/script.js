@@ -1,5 +1,6 @@
 $(document).ready(function() {
     
+    
     // print current date to top of page 
     var localTime = luxon.DateTime.local();
     var formatTime = localTime.toLocaleString(luxon.DateTime.DATE_MED_WITH_WEEKDAY)
