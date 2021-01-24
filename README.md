@@ -11,7 +11,7 @@
 
 ![Alt text](./Assets/webpageSnap.png?raw=true "Working Calendar Snap")
 
-This repo contains a working application that allows the user to type and store events for every hour of the normal workday (9-5), whild indicating the current hour, previous hours and future hours through colorblocking. This repo was created as a homework assignment for the Georgia Tech fullstack development bootcamp. 
+This repo contains a working application that allows the user to type and store events for every hour of the normal workday (9-5), while indicating the current hour, previous hours and future hours through colorblocking. This repo was created as a homework assignment for the Georgia Tech fullstack development bootcamp. 
 
 ## Access
 
