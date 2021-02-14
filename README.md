@@ -15,9 +15,9 @@ This repo contains a working application that allows the user to type and store 
 
 ## Access
 
-You can find the deployed webpage here: https://caitlin-emily.github.io/workdayCalendar/
+You can find the deployed webpage here: https://caitie-gorham.github.io/workdayCalendar/
 
-You can find the GitHub repo here: https://github.com/caitlin-emily/workdayCalendar
+You can find the GitHub repo here: https://github.com/caitie-gorham/workdayCalendar
 
 ## Details
 
